@@ -1,0 +1,80 @@
+.filter-toolbar {
+    width: 100%;
+    background-color: #f7f9fc;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50px; /* adjust based on header height */
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-tabs button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .filter-tabs button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .filter-tabs button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .location-filters,
+  .specialization-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* for the clear button */
+  }
+  
+  .filter-item label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .filter-item select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .clear-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: -1.5rem;
+    top: 1.5rem;
+    font-weight: bold;
+  }
+  
